@@ -3,9 +3,9 @@ import { ProfileCard } from "@/components/ProfileCard";
 
 // TODO: 더미 데이터 — 실제 프로필/링크 데이터로 교체 예정
 const profile = {
-  name: "김클로",
-  bio: "세계 최강 바이브코더",
-  imageSrc: "/avatar-placeholder.svg",
+  name: "김개발",
+  bio: "풀 스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
+  imageSrc: "https://placehold.co/150x150/orange/white",
 };
 
 const links = [
@@ -16,8 +16,8 @@ const links = [
 
 export default function Home() {
   return (
-    <div className="flex flex-1 items-start justify-center bg-zinc-50 px-4 py-12 dark:bg-black sm:py-20">
-      <main className="flex w-full max-w-sm flex-col items-center gap-8">
+    <div className="flex flex-1 items-start justify-center px-6 py-16 sm:px-8 sm:py-24">
+      <main className="flex w-full max-w-sm flex-col items-center gap-10">
         <ProfileCard {...profile} />
         <div className="flex w-full flex-col gap-4">
           {links.map((link) => (
