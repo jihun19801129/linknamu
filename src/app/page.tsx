@@ -1,4 +1,4 @@
-import { LinkCard } from "@/components/LinkCard";
+import { LinkList } from "@/components/LinkList";
 import { ProfileCard } from "@/components/ProfileCard";
 
 // TODO: 더미 데이터 — 실제 프로필/링크 데이터로 교체 예정
@@ -19,11 +19,7 @@ export default function Home() {
     <div className="flex flex-1 items-start justify-center px-6 py-16 sm:px-8 sm:py-24">
       <main className="flex w-full max-w-sm flex-col items-center gap-10">
         <ProfileCard {...profile} />
-        <div className="flex w-full flex-col gap-4">
-          {links.map((link) => (
-            <LinkCard key={link.label} {...link} />
-          ))}
-        </div>
+        <LinkList links={links} />
       </main>
     </div>
   );
